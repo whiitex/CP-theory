@@ -33,16 +33,16 @@ void solve() {
 
     // preprocessing O(n*logn)
     vector<ll> num(MAX_N);
-    num[1] = 1;
-    for (ll i=2; i<MAX_N; ++i) {
+    num[0] = 1;
+    for (ll i=1; i<MAX_N; ++i) {
         // this is faster than 'num[i] = num[i-1] * i % MOD'
         num[i] = num[i-1] * i;
         if (num[i] > MOD) num[i] %= MOD;
     }
 
     vector<ll> den(MAX_N);
-    den[1] = 1;
-    for (ll i=2; i<MAX_N; ++i) {
+    den[0] = 1;
+    for (ll i=1; i<MAX_N; ++i) {
         den[i] = den[i-1] * powerlogn(i, MOD-2);
         if (den[i] > MOD) den[i] %= MOD;
     }
