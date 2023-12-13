@@ -2,8 +2,9 @@
  * In input a big number x is given, such that 0 <= x <= 10^(10^5).
  * In one operation it is possible to erase any substring
  * of consecutive numbers from the array. We want to calculate the sum
- * of the remaing number obtained after every combination of the
+ * of the remaining number obtained after every combination of the
  * operation above. Print the result module 1e9+7.
+ * problem: https://codeforces.com/problemset/problem/1422/C
  */
 
 #include <bits/stdc++.h>
