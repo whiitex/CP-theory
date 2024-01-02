@@ -79,7 +79,7 @@ struct RMQ {
  *    exp such that the range [l, l-1 + 2^exp] is contained in [l,r]
  * 2- from memo[r+1 - 2^exp][exp], that is the second slice, which
  *    can or cannot overlap with the previous one; but this is not
- *    a problem, since min/max function doesn't change their
+ *    a problem, since min/max function doesnt change their
  *    outcome if an input is considered multiple times.
  * Finally, the complete solution is the min/max function of the
  * previously calculated partial solutions.
