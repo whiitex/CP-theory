@@ -23,6 +23,7 @@ int powerlogn(int b, int exp) {
         mul *= mul;
         exp /= 2;
     }
+    return ans;
 }
 
 void solve() {
