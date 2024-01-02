@@ -3,8 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-template<typename T>
-struct RMQ {
+template<typename T> struct RMQ {
 
 // ------------------------ INTRODUCTION ----------------------- //
 /* RMQ is the acronym of 'Range Minimum Query'. In this
